@@ -1,0 +1,3 @@
+/root/projects/qrcode_sdk/src/CMakeFiles/rebuild_cache.dir
+/root/projects/qrcode_sdk/src/CMakeFiles/QRCode.dir
+/root/projects/qrcode_sdk/src/CMakeFiles/edit_cache.dir

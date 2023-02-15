@@ -1,0 +1,101 @@
+Using built-in specs.
+COLLECT_GCC=g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+COLLECT_GCC_OPTIONS='-L/usr/include/' '-g' '-Wall' '-std=c++11' '-v' '-o' 'main' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE QRCode.cpp -quiet -dumpbase QRCode.cpp -mtune=generic -march=x86-64 -auxbase QRCode -g -Wall -std=c++11 -version -fstack-protector-strong -Wformat-security -o /tmp/ccbFeo49.s
+GNU C++11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 3eb3dc290cd5714c3e1c3ae751116f07
+QRCode.cpp: In function 'int main(int, char**)':
+QRCode.cpp:28:3: warning: label 'cv' defined but not used [-Wunused-label]
+   cv:imshow("Source Image", image);
+   ^~
+COLLECT_GCC_OPTIONS='-L/usr/include/' '-g' '-Wall' '-std=c++11' '-v' '-o' 'main' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o /tmp/ccgXXW8H.o /tmp/ccbFeo49.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-L/usr/include/' '-g' '-Wall' '-std=c++11' '-v' '-o' 'main' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cct8m8pg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o main /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/include/ -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. /tmp/ccgXXW8H.o -lstdc++ -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+/tmp/ccgXXW8H.o: In function `main':
+/root/projects/qrcode_sdk/src/QRCode.cpp:10: undefined reference to `cv::imread(cv::String const&, int)'
+/root/projects/qrcode_sdk/src/QRCode.cpp:12: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+/root/projects/qrcode_sdk/src/QRCode.cpp:28: undefined reference to `cv::imshow(cv::String const&, cv::_InputArray const&)'
+/root/projects/qrcode_sdk/src/QRCode.cpp:29: undefined reference to `cv::waitKey(int)'
+/tmp/ccgXXW8H.o: In function `zbar::Exception::what() const':
+/usr/include/zbar/Exception.h:55: undefined reference to `_zbar_error_string'
+/tmp/ccgXXW8H.o: In function `zbar::SymbolSet::ref(int) const':
+/usr/include/zbar/Symbol.h:71: undefined reference to `zbar_symbol_set_ref'
+/tmp/ccgXXW8H.o: In function `zbar::Symbol::ref(int) const':
+/usr/include/zbar/Symbol.h:219: undefined reference to `zbar_symbol_ref'
+/tmp/ccgXXW8H.o: In function `zbar::Symbol::get_type_name[abi:cxx11]() const':
+/usr/include/zbar/Symbol.h:249: undefined reference to `zbar_get_symbol_name'
+/tmp/ccgXXW8H.o: In function `zbar::Symbol::init(zbar::zbar_symbol_s const*)':
+/usr/include/zbar/Symbol.h:331: undefined reference to `zbar_symbol_get_type'
+/usr/include/zbar/Symbol.h:333: undefined reference to `zbar_symbol_get_data_length'
+/usr/include/zbar/Symbol.h:332: undefined reference to `zbar_symbol_get_data'
+/tmp/ccgXXW8H.o: In function `zbar::SymbolIterator::SymbolIterator(zbar::SymbolSet const&)':
+/usr/include/zbar/Symbol.h:364: undefined reference to `zbar_symbol_set_first_symbol'
+/tmp/ccgXXW8H.o: In function `zbar::SymbolIterator::operator++()':
+/usr/include/zbar/Symbol.h:386: undefined reference to `zbar_symbol_next'
+/usr/include/zbar/Symbol.h:390: undefined reference to `zbar_symbol_set_first_symbol'
+/tmp/ccgXXW8H.o: In function `zbar::Image::Image(unsigned int, unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, void const*, unsigned long)':
+/usr/include/zbar/Image.h:100: undefined reference to `zbar_image_create'
+/usr/include/zbar/Image.h:102: undefined reference to `zbar_image_set_userdata'
+/tmp/ccgXXW8H.o: In function `zbar::Image::~Image()':
+/usr/include/zbar/Image.h:113: undefined reference to `zbar_image_ref'
+/tmp/ccgXXW8H.o: In function `zbar::Image::set_format(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/zbar/Image.h:152: undefined reference to `zbar_image_set_format'
+/tmp/ccgXXW8H.o: In function `zbar::Image::set_size(unsigned int, unsigned int)':
+/usr/include/zbar/Image.h:191: undefined reference to `zbar_image_set_size'
+/tmp/ccgXXW8H.o: In function `zbar::Image::set_data(void const*, unsigned long)':
+/usr/include/zbar/Image.h:214: undefined reference to `zbar_image_set_data'
+/tmp/ccgXXW8H.o: In function `zbar::Image::get_symbols() const':
+/usr/include/zbar/Image.h:242: undefined reference to `zbar_image_get_symbols'
+/tmp/ccgXXW8H.o: In function `zbar::Image::_cleanup(zbar::zbar_image_s*)':
+/usr/include/zbar/Image.h:281: undefined reference to `zbar_image_get_userdata'
+/tmp/ccgXXW8H.o: In function `zbar::ImageScanner::ImageScanner(zbar::zbar_image_scanner_s*)':
+/usr/include/zbar/ImageScanner.h:48: undefined reference to `zbar_image_scanner_create'
+/tmp/ccgXXW8H.o: In function `zbar::ImageScanner::~ImageScanner()':
+/usr/include/zbar/ImageScanner.h:53: undefined reference to `zbar_image_scanner_destroy'
+/tmp/ccgXXW8H.o: In function `zbar::ImageScanner::set_config(zbar::zbar_symbol_type_e, zbar::zbar_config_e, int)':
+/usr/include/zbar/ImageScanner.h:76: undefined reference to `zbar_image_scanner_set_config'
+/tmp/ccgXXW8H.o: In function `zbar::ImageScanner::scan(zbar::Image&)':
+/usr/include/zbar/ImageScanner.h:113: undefined reference to `zbar_scan_image'
+/tmp/ccgXXW8H.o: In function `cv::String::String(char const*)':
+/usr/include/opencv2/core/cvstd.hpp:622: undefined reference to `cv::String::allocate(unsigned long)'
+/tmp/ccgXXW8H.o: In function `cv::String::~String()':
+/usr/include/opencv2/core/cvstd.hpp:664: undefined reference to `cv::String::deallocate()'
+/tmp/ccgXXW8H.o: In function `cv::String::operator=(cv::String const&)':
+/usr/include/opencv2/core/cvstd.hpp:672: undefined reference to `cv::String::deallocate()'
+/tmp/ccgXXW8H.o: In function `cv::Mat::~Mat()':
+/usr/include/opencv2/core/mat.inl.hpp:592: undefined reference to `cv::fastFree(void*)'
+/tmp/ccgXXW8H.o: In function `cv::Mat::release()':
+/usr/include/opencv2/core/mat.inl.hpp:704: undefined reference to `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
