@@ -1,0 +1,5 @@
+From ubuntu:18.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt -y install g++ vim libzbar-dev libopencv-dev cmake && apt clean
+
