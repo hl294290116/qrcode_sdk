@@ -1,2 +1,0 @@
-/usr/bin/ar qc libzbar.a  
-/usr/bin/ranlib libzbar.a
