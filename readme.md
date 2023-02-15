@@ -1,24 +1,3 @@
-添加事件请按顺序添加事件类型和id
-下面是已经使用的事件类型id
-新增加事件，对应的event_id 不能和以前一样
-
-参考activity_sdk/include/AibeeActivity.hpp
-
-enum class ActivityType {
-    fall,               // event_id -> 0
-    fight,              // event_id -> 1
-    cellphone_using,    // event_id -> 2
-    screen_photo_taking,    // event_id -> 3
-    screen_photo_taking_pose2d,    // event_id -> 4
-};
-
-
-事件类型记录
-
-fall,               // evnet_id -> 0   跌倒事件
-fight,              // event_id -> 1   打架事件
-cellphone_using,    // event_id -> 2   手机使用事件
-screen_photo_taking,    // event_id -> 3 手机拍屏事件
-screen_photo_taking_pose2d,    // event_id -> 4 带pose的手机拍屏手机拍屏事件
-
-
+# cmakefiles 还不会 -lzbar 参数，暂时使用如下命令编译
+#  compile:
+ /usr/bin/g++ -std=c++11 -lstdc++ scan_image.cpp -lzbar  -o scan_image /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0 /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
