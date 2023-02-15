@@ -13,7 +13,7 @@ int main(int argc, char*argv[])
   int width = image.cols;
   int height = image.rows;
   uchar *raw = (uchar *)image.data;
-  zbar::Image imageZbar(width, height, "Symbol.ttf", raw, width*height);
+  zbar::Image imageZbar(width, height, "Y800", raw, width*height);
   scanner.scan(imageZbar); //扫描条码  
   zbar::Image::SymbolIterator symbol = imageZbar.symbol_begin();
   if (imageZbar.symbol_begin() == imageZbar.symbol_end())
@@ -25,7 +25,6 @@ int main(int argc, char*argv[])
     std::cout << "类型：" << symbol->get_type_name() << std::endl;
     std::cout << "条码：" << symbol->get_data() << std::endl;
   }
-  cv:imshow("Source Image", image);
-  cv::waitKey();
+  cv:imwrite("test.jpg", image);
   return 0;
 }
