@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project( scan_image )
+
+SET(CMAKE_INSTALL_PREFIX "build")
+
 # zbar
 
 
@@ -12,8 +15,11 @@ message(“${CMAKE_CXX_COMPILER})
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-add_executable( QRCode QRCode.cpp )
-# add_library("zbar" SHARED IMPORTED)
-# set_target_properties("zbar" PROPERTIES LINKER_LANGUAGE CXX)
 
-target_link_libraries( QRCode ${OpenCV_LIBS})
+# add_library(zbar "/usr/lib/x86_64-linux-gnu/libzbar.so")
+# set_target_properties(zbar PROPERTIES LINKER_LANGUAGE CXX)
+
+add_executable( QRCode scan_image.cpp )
+link_directories("/usr/lib/x86_64-linux-gnu")
+
+target_link_libraries( QRCode PUBLIC ${OpenCV_LIBS} zbar)

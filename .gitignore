@@ -1,5 +1,6 @@
 dataset
 output
-src/CMakeFiles
-src/cmake*
-src/CMakeCache.txt
+CMakeFiles
+cmake*
+CMakeCache.txt
+.vscode
