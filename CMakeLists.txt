@@ -16,10 +16,9 @@ find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 
-# add_library(zbar "/usr/lib/x86_64-linux-gnu/libzbar.so")
-# set_target_properties(zbar PROPERTIES LINKER_LANGUAGE CXX)
-
+add_library(zbar SHARED IMPORTED)
+set_target_properties(zbar PROPERTIES IMPORTED_LOCATION /usr/lib/x86_64-linux-gnu/libzbar.so.0.2.0 )
 add_executable( QRCode scan_image.cpp )
-link_directories("/usr/lib/x86_64-linux-gnu")
+# link_directories("/usr/lib/x86_64-linux-gnu")
 
 target_link_libraries( QRCode PUBLIC ${OpenCV_LIBS} zbar)
